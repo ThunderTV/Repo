@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.thunder" name="Thunder TV" version="1.1" provider-name="Loose Cannon">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live IPTV </summary>
+    <language>en</language>
+    <description lang="en">Live IPTV unofficial Addon - Supplier of Great Quality and Stable Streams</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+    <addon id="repository.ThunderTV" name="ThunderTV Repo" version="0.1.0" provider-name="ThunderTV">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="ThunderTV Repo">
+            <info compressed="false">https://github.com/ThunderTV/_repo/addons.xml</info>
+            <checksum>https://github.com/ThunderTV/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/ThunderTV/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>All things ThunderTV</summary>
+            <description>All things ThunderTV</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
